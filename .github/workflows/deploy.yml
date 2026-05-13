@@ -1,0 +1,23 @@
+name: Deploy Hello World
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Build e restart dos containers
+        run: |
+          cd /home/suporte/desafio-devops
+          docker compose down
+          docker compose up -d --build
+
+      - name: Verifica containers rodando
+        run: docker compose ps
