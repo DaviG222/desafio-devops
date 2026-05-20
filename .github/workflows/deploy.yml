@@ -20,4 +20,6 @@ jobs:
           docker compose up -d --build
 
       - name: Verifica containers rodando
-        run: docker compose ps
+        run: |
+          cd /home/suporte/desafio-devops
+          docker compose ps
