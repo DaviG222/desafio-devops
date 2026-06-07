@@ -27,7 +27,7 @@ resource "docker_container" "site" {
   image = docker_image.site.image_id
 
   ports {
-    internal = 80
+    internal = 8080
     external = 8090
   }
 
