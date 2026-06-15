@@ -1,0 +1,62 @@
+{
+  "version": 4,
+  "terraform_version": "1.8.5",
+  "serial": 47,
+  "lineage": "26e5ab7b-3aed-33eb-2ee9-b7f6ac1db826",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "docker_image",
+      "name": "grafana",
+      "provider": "provider[\"registry.terraform.io/kreuzwerker/docker\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "build": [],
+            "force_remove": null,
+            "id": "sha256:0f86bada30d65ef9d0183b90c1e2682ac92d53d95da8bed322b984ea78a4a73agrafana/grafana:latest",
+            "image_id": "sha256:0f86bada30d65ef9d0183b90c1e2682ac92d53d95da8bed322b984ea78a4a73a",
+            "keep_locally": null,
+            "name": "grafana/grafana:latest",
+            "platform": null,
+            "pull_triggers": null,
+            "repo_digest": "grafana/grafana@sha256:0f86bada30d65ef9d0183b90c1e2682ac92d53d95da8bed322b984ea78a4a73a",
+            "timeouts": null,
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "docker_image",
+      "name": "prometheus",
+      "provider": "provider[\"registry.terraform.io/kreuzwerker/docker\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "build": [],
+            "force_remove": null,
+            "id": "sha256:e4254400b85610324913f0dc4acf92603d9984e7519414c5a12811aa6146acc3prom/prometheus:latest",
+            "image_id": "sha256:e4254400b85610324913f0dc4acf92603d9984e7519414c5a12811aa6146acc3",
+            "keep_locally": null,
+            "name": "prom/prometheus:latest",
+            "platform": null,
+            "pull_triggers": null,
+            "repo_digest": "prom/prometheus@sha256:e4254400b85610324913f0dc4acf92603d9984e7519414c5a12811aa6146acc3",
+            "timeouts": null,
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
